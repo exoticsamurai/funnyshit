@@ -1,4 +1,4 @@
--- made by dzz(daddy)
+-- made by dzz (daddy)
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 
@@ -15,7 +15,7 @@ c:Label("made by dzz#9063",{
     
 })
 
-b:Button("Anti lag",function()
+b:Button("AntiBaryon Lag",function()
     game:GetService("ReplicatedStorage").Rasengan_.Attachment:Destroy()
     game:GetService("ReplicatedStorage").Rasengan_.Transparency = 1
 end)
@@ -105,7 +105,7 @@ end)
 end)
 
 b:Slider("Distance",{
-    min = 5; -- min value of the slider
+    min = 10; -- min value of the slider
     max = 50; -- max value of the slider
     precise = true; -- max 2 decimals
 },function(value)
@@ -121,3 +121,5 @@ end)
 b:Bind("Gojo Health",Enum.KeyCode.G,function() --Default bind
     game:GetService("ReplicatedStorage").Document.Gojo:FireServer()
 end)
+
+print("everything went fine")
