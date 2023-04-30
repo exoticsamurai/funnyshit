@@ -1,10 +1,12 @@
--- made by dzz (daddy)
+-- made by dzz(daddy)
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 
 local w = library:CreateWindow("Rock Piece") -- Creates the window
 
 local b = w:CreateFolder("Main") -- Creates the folder(U will put here your buttons,etc)
+
+local d = w:CreateFolder("Moves") -- Creates the folder(U will put here your buttons,etc)
 
 local c = w:CreateFolder("Credits") -- funny by dzz 
 
@@ -114,12 +116,26 @@ b:Slider("Distance",{
 end)
 
 
-b:Bind("TimeStop",Enum.KeyCode.F,function() --Default bind
+d:Bind("TimeStop",Enum.KeyCode.F,function() --Default bind
     game:GetService("ReplicatedStorage").Document.TWOH:FireServer()
 end)
 
-b:Bind("Gojo Health",Enum.KeyCode.G,function() --Default bind
+d:Bind("Gojo Health",Enum.KeyCode.G,function() --Default bind
     game:GetService("ReplicatedStorage").Document.Gojo:FireServer()
 end)
 
-print("everything went fine")
+d:Bind("Reset Universe",Enum.KeyCode.T,function() --Default bind
+    game:GetService("ReplicatedStorage").Document["Made In Heaven"]:FireServer()
+end)
+
+d:Bind("Ice Bird",Enum.KeyCode.Z,function() --Default bind
+    game:GetService("ReplicatedStorage").Document.DevilFruit.Ice.IceEvent:FireServer()
+end)
+
+d:Bind("Gravity Meteor",Enum.KeyCode.Z,function() --Default bind
+    game:GetService("ReplicatedStorage").Document.DevilFruit.Gravity.GravityEvent4:FireServer()
+end)
+
+d:Bind("Gravity Zone",Enum.KeyCode.X,function() --Default bind
+    game:GetService("ReplicatedStorage").Document.DevilFruit.Gravity.GravityEvent3:FireServer()
+end)
